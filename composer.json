@@ -1,19 +1,24 @@
 {
-    "name": "phpalipay/alipay-login",
-    "description": "alipay OAuth 2",
-    "keywords": ["oauth", "alipay", "login"],
-    "homepage": "https://github.com/hzjdhr/aliLogin",
-    "license": "MIT",
-    "support": {
-
-    },
-    "authors": [
-        {
-            "name": "黄智健",
-            "email": "782389483@qq.com",
-            "homepage": "http://www.4399.com"
-        }
-    ],
-
-    "minimum-stability": "dev"
+  "name": "phpalipay/alipay-login",
+  "description": "alipay OAuth 2",
+  "keywords": [
+    "oauth",
+    "alipay",
+    "login"
+  ],
+  "homepage": "https://github.com/hzjdhr/aliLogin",
+  "license": "MIT",
+  "support": {
+  },
+  "authors": [
+    {
+      "name": "黄智健",
+      "email": "782389483@qq.com",
+      "homepage": "http://www.4399.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "minimum-stability": "dev"
 }
