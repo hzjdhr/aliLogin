@@ -12,7 +12,7 @@
  * @param string $str
  * @return string
  */
- function encrypt($str,$screct_key){
+ function aliencrypt($str,$screct_key){
 	//AES, 128 模式加密数据 CBC
 	$screct_key = base64_decode($screct_key);
 	$str = trim($str);
@@ -27,7 +27,7 @@
  * @param string $str
  * @return string
  */
- function decrypt($str,$screct_key){
+ function alidecrypt($str,$screct_key){
 	//AES, 128 模式加密数据 CBC
 	$str = base64_decode($str);
 	$screct_key = base64_decode($screct_key);
