@@ -1,5 +1,5 @@
 {
-    "name": "php/alipayLogin",
+    "name": "php/alipay-login",
     "description": "alipay OAuth 2",
     "keywords": ["oauth", "alipay", "login"],
     "homepage": "https://github.com/hzjdhr/aliLogin",
