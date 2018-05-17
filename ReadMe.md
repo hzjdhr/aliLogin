@@ -20,10 +20,29 @@
 
   use aliLogin\AliLogin;
 
+
+    public function login_zfb(AliLogin $aliLogin)
+    {
+          //回调地址
+          $url   = xxxx
+          
+          $app_id = xxxxx;
+          
+          $url = $aliLogin->aliRedirect($url,$app_id)
+          
+          //跳转
+          return redirect($url);
+    }
+
+
+
+
+
     public function notify(Request $request,AliLogin $aliLogin)
  
       {
   
+          //获取http请求得到的auth_code
           $auth_code =$request->auth_code;
   
           $app_id     = env('ALI_KEY');
