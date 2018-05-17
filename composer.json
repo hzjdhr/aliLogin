@@ -21,7 +21,7 @@
     "php": ">=5.3.0"
   },
   "autoload": {
-    "files": ["phpalipay/alipay-login/AliLogin.php","phpalipay/alipay-login/AliLoginService.php"]
+    "files": ["vender/phpalipay/alipay-login/AliLogin.php","vender/phpalipay/alipay-login/AliLoginService.php"]
   },
   "minimum-stability": "dev",
   "prefer-stable": true
