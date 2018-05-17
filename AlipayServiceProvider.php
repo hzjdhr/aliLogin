@@ -5,7 +5,7 @@ use aliLogin\AliLogin;
 use aliLogin\AliLoginService;
 use Illuminate\Support\ServiceProvider;
 
-class AlilpayServiceProvider extends ServiceProvider
+class AlipayServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
