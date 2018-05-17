@@ -22,7 +22,7 @@
     "phpalipay/alipay-login": "dev-master"
   },
   "autoload": {
-    "files": ["AliLogin.php","AliLoginService.php","AlilpayServiceProvider.php"]
+    "files": ["AliLogin.php","AliLoginService.php","AlipayServiceProvider.php"]
   },
   "minimum-stability": "dev",
   "prefer-stable": true
