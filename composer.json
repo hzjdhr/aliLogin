@@ -21,7 +21,7 @@
     "php": ">=5.3.0"
   },
   "autoload": {
-    "classmap": ["alipay-login/", "aop/", "AopClient.php"]
+    "files": ["phpalipay/alipay-login/AliLogin.php","phpalipay/alipay-login/AliLoginService.php"]
   },
   "minimum-stability": "dev",
   "prefer-stable": true
