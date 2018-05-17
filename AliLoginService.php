@@ -8,7 +8,16 @@ use AlipayUserInfoShareRequest;
 
 class AliLoginService extends AliLogin {
 
-    public function alilogin($appId,$rsaPrivateKey,$alipayrsaPublicKey,$auth_code){
+
+    public function alilogin($url, $app_id)
+    {
+
+        $url  =  "https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=$app_id&scope=auth_user&redirect_uri=$url";
+
+        return $url;
+    }
+
+    public function aliRedirect($appId,$rsaPrivateKey,$alipayrsaPublicKey,$auth_code){
 
         include_once 'aop/AopClient.php';
 
@@ -50,12 +59,6 @@ class AliLoginService extends AliLogin {
 
     }
 
-    public function aliRedirect($url, $app_id)
-    {
 
-        $url  =  "https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=$app_id&scope=auth_user&redirect_uri=$url";
-
-        return $url;
-    }
 
 }

@@ -21,14 +21,14 @@
   use aliLogin\AliLogin;
 
 
-    public function login_zfb(AliLogin $aliLogin)
+    public function login(AliLogin $aliLogin)
     {
           //回调地址
           $url   = xxxx
           
           $app_id = xxxxx;
           
-          $url = $aliLogin->aliRedirect($url,$app_id)
+          $url = $aliLogin->alilogin($url,$app_id)
           
           //跳转
           return redirect($url);
@@ -51,7 +51,7 @@
   
           $alipay_rsa_public_key = env('ALI_alipayrsaPublicKey');
   
-          $user = $aliLogin->alilogin($app_id,$rsa_private_key,$alipay_rsa_public_key,$auth_code);
+          $user = $aliLogin->aliRedirect($app_id,$rsa_private_key,$alipay_rsa_public_key,$auth_code);
   
           dd($user);
       }
