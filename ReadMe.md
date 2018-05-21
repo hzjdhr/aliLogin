@@ -10,13 +10,21 @@
 
 **二：使用方法**
 
-1.composer require phpalipay/alipay-login
+一.composer require phpalipay/alipay-login
 
-2.在laravel config目录下的app.php,添加providers
+二.在laravel config目录下的app.php,添加providers
 
 'App\Providers\AlipayServiceProvider::class，`
 
-3.获取用户信息，AliLogin自动注入，然后调用alilogin函数依次传入：app_id,私钥，支付宝公钥，auth_code
+三.
+
+3.1
+
+跳转支付宝登陆页面 :AliLogin自动注入，调用alilogin函数，依次传入回调地址，app_id即可
+
+3.2
+
+获取用户信息，AliLogin自动注入，调用aliRedirect函数,依次传入：app_id,应用私钥，支付宝公钥，auth_code
 
   use aliLogin\AliLogin;
 
@@ -47,8 +55,10 @@
   
           $app_id     = env('ALI_KEY');
   
+          //应用私钥
           $rsa_private_key = env('ALI_rsaPrivateKey');
   
+          //支付宝公钥
           $alipay_rsa_public_key = env('ALI_alipayrsaPublicKey');
   
           $user = $aliLogin->aliRedirect($app_id,$rsa_private_key,$alipay_rsa_public_key,$auth_code);
