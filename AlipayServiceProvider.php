@@ -30,10 +30,12 @@ class AlipayServiceProvider extends ServiceProvider
             return new AliLoginService;
         });
 
+
 //        //使用bind绑定单例
 //        $this->app->singleton('App\Contracts\Hzj',function(){
 //
 //            return new TestService();
 //        });
+
     }
 }
