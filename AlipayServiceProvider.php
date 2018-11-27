@@ -31,7 +31,7 @@ class AlipayServiceProvider extends ServiceProvider
         });
 
 
-//1
+//123
 
 //        //使用bind绑定单例
 //        $this->app->singleton('App\Contracts\Hzj',function(){
